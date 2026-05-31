@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.app-container {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Drag & Drop Zone */
+.drop-zone {
+    border: 3px dashed #bdc3c7;
+    border-radius: 15px;
+    padding: 50px 20px;
+    background-color: #f9fbfd;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.drop-zone.dragover {
+    border-color: #3498db;
+    background-color: #ebf5fb;
+    transform: scale(1.02);
+}
+
+.drop-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.browse-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.browse-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Settings Panel */
+.settings-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #f1f2f6;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.setting-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+}
+
+.setting-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.modern-select, .modern-slider {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Action Button */
+.primary-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: #3498db;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #2980b9;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    transform: translateY(-3px);
+}
